@@ -5,9 +5,7 @@ class UserData:
     def dataGraphQL(self, req):
         return {
             "av": re.search('"actorID":"(\d+)"', str(req)).group(1),
-
             "__aaid": "0",
-
             "__user": re.search('"actorID":"(\d+)"', str(req)).group(1),
             "__a": str(random.randrange(1, 6)),
             "__req": "12",
